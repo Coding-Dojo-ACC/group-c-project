@@ -1,0 +1,52 @@
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@bg: #f7f7f7;
+@font: #543d31;
+@bg2: #f9c47591;
+@font2: #fff;
+
+body {
+    background-image: url(../images/cookie.png);
+    .flexcolumn();
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: @bg;
+
+    header {
+        .flexcolumn();
+        background-color: @bg2;
+        width: 95%;
+
+        h1 {
+            font-size: 2.2em;
+            color: @font;
+        }
+    }
+    .main {
+        .flexcolumn();
+        background-color: @bg2;
+        margin: 2em;
+
+
+        .show {
+            .flexcolumn();
+            background-image: url(../images/cookieJar.png);    
+            background-repeat: no-repeat;
+            // background-attachment: fixed;
+            background-position: center;
+            min-height: 200px;
+            color: @font2;
+        }
+    }
+}
